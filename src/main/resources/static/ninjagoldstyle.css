@@ -1,0 +1,144 @@
+@charset "ISO-8859-1";
+
+*{
+    /* outline: 1px solid red; */
+}
+#container {
+	margin-left: 10px;
+	margin-top: 20px;
+}
+#gold p{
+    display: inline-block;
+
+}
+#gold-count{
+    width: 150px;
+    padding: 3px;
+    border: solid 2px black;
+}
+.choice, .farm{
+    /* background-image: url(farm.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%; */
+    text-align: center;
+    width: 200px;
+    height: 160px;
+    display: inline-block;
+    border: solid 2px black;
+}
+
+
+
+.farm::after{
+    content: "";
+    background: url(farm.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.4;
+    z-index: -1; 
+    top: 126px;
+    left: 10px;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 160px;
+    position: absolute;
+}
+
+.cave::after{
+    content: "";
+    background: url(cave.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.4;
+    z-index: -1; 
+    top: 126px;
+    left: 216px;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 160px;
+    position: absolute;
+}
+.house::after{
+    content: "";
+    background: url(house.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.4;
+    z-index: -1; 
+    top: 126px;
+    left: 424px;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 160px;
+    position: absolute;
+}
+
+.casino::after{
+    content: "";
+    background: url(casino.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.4;
+    z-index: -1; 
+    top: 126px;
+    left: 623px;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 160px;
+    position: absolute;
+}
+
+#activity-box{
+    overflow-y:scroll;
+    margin: 10px;
+    width: 825px;
+    height: 150px;
+    border: solid 2px black;
+    
+}
+
+#activity p{
+	margin-top: 20px;
+    margin-left: 10px;
+    
+}
+
+#activity-box p{
+    margin: 0 20px;
+}
+
+button{
+    border: 1px solid black;
+    box-shadow: 3px 3px;
+    background-color: white;
+}
+
+#gold button{
+    margin-bottom: 10px;
+}
+
+#winning_cond{
+    width: 825px;
+}
+
+#winning_cond input{
+    width: 70px;
+    margin-right: 19px;
+}
+
+#winning_cond p{
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+#game_status {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
